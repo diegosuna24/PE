@@ -22,18 +22,16 @@ int msges()
 {
     int op;
     system("CLS");
-    printf("\n   M  E   N   U \n");
-    printf("1.- MAYUSCULAS \n");
-    printf("2.- MINUSCULAS \n");
-    printf("3.- CAPITAL \n");
-    printf("4.- CANTIDAD CARACTERES \n");
-    printf("5.- REVERSA \n");
-    printf("6.- SIN ESPACIOS \n");
-    printf("7.- CARACTERES ALFABETICOS \n");
-    printf("8.- IMPRIMIR VARIAS \n");
-    printf("9.- PALINDROMO \n");
-    printf("0.- SALIR  \n");
-    printf("ESCOGE UNA OPCION: ");
+    printf(" MENU \n");
+    printf("Escoge una opciosn\n");
+    printf("MAYUSCULAS \n");
+    printf("MINUSCULAS \n");
+    printf("CAPITAL \n");
+    printf("CANTIDAD CARACTERES \n");
+    printf("REVERSA \n");
+    printf("NO ESPACIOS \n");
+    printf("CARACTERES ALFABETICOS \n");
+    printf("IMPRIMIR \n");
     scanf("%d", &op);
     return op;
 }
@@ -93,7 +91,7 @@ void Mayusculas(char cadena[])
     }
 }
 
-void printMinus(char cadena[])
+void Minusculas(char cadena[])
 {
     for (int i = 0; cadena[i] != '\0'; i++)
     {
@@ -109,7 +107,6 @@ void printMinus(char cadena[])
 void Capital (char cadena[])
 {
     char caracter;
-
     if (cadena[0] >= 'a' && cadena[0] <= 'z')
     {
         cadena[0] -= 32; 
