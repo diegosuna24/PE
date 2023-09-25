@@ -1,7 +1,6 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-
 int msges();
 void menu();
 void Mayusculas (char cadena[]);
@@ -13,14 +12,11 @@ void NoEspacios(char cadena[]);
 void Alfa(char cadena[]);
 void Fun(char cadena[]);
 
-
 int main()
 {
     menu();
-
     return 0;
 }
-
 
 int msges()
 {
@@ -49,8 +45,7 @@ void menu()
     printf("Ingrese una cadena:");
     fflush(stdin);
     gets(cadena);
-    do
-    {
+    do {
         op = msges();
         system("CLS");
         switch (op)
@@ -197,18 +192,12 @@ void Fun(char cadena[])
 {
     printf("Mayusculas: \n");
     Mayusculas(cadena);
-    printf("\n");
-
     printf("Minusculas: \n");
     Minusculas(cadena);
-    printf("\n");
-
     printf("Capital: \n");
     Capital(cadena);
-
     printf("Sin Espacios: \n");
     NoEspacios (cadena);
-
     printf("Al reves: \n");
     Reversa(cadena);
 }
