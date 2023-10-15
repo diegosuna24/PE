@@ -1,4 +1,6 @@
 
+#include <stdlib.h>
+#include <time.h>
 
 int num_ent_pos(int num){
     if (num<0||num%1==!0){
@@ -10,19 +12,20 @@ int num_ent_pos(int num){
     }
 }
 
-int no_rep(int vector[],int largovector,int num){
+int busquedasec(int vector[],int largovector,int num){
     int ban=1;
     for(int i=0;i<=largovector;i++){
         if(vector[i]==num)
         {
             ban=0;
+            return ban;
         }
     }
-    if(ban==0){
-        return 0;
-    }
-    else{
-        return 1;
-    }
+    return ban;
+}
+
+int num_aleatorio(int numsup){
+    int num=rand()%numsup+1;
+    return num;
 }
 
