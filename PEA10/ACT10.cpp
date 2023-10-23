@@ -45,7 +45,6 @@ int main() {
         switch (op) {
             case 0:
                 return 0;
-
             case 1:
                 for (int i = 1; i <= 10; i++) {
                     alumalea(cont);
@@ -53,31 +52,25 @@ int main() {
                 }
                 printf("cont = %d\n", cont);
                 break;
-
             case 2:
-                matrism()
+                matrism();
                 alummanual(cont);
                 cont++;
                 break;
-
             case 3:
-
                 matrism();
                 eliminarregistro(cont, arreglomatriculas);
                 break;
-
             case 4:
                 matrism();
                 buscar(cont,arreglomatriculas );
                 break;
-
             case 5:
-                matrism()
+                matrism();
                 ordenar(cont);
                 break;
-
             case 6:
-                matrism()
+                matrism();
                 imprimirdatos(cont);
                 break;
         }
