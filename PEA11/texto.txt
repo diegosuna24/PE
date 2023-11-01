@@ -1,0 +1,301 @@
+EST  MATRICULA  NOMBRE          APP             APM             FECHA      SEXO LUGAR CURP âE¸ãE¸HÉƒ8[]√êêêêêêêêêêêêUSHÉÏ8Hçl$0HâM HâU(LâE0LâM8HçE(HâEHã]π
+1    300028     FERNANDO        OSUNA           ALVAREZ         4 _6 _1937 H    TL  CURP 
+1    300041     MIGUEL          NAVARRO         OSUNA           10_7 _2024 H    SL  CURP 
+1    300189     ROSA            MENDOZA         HERNANDEZ       14_7 _1951 M    CH  CURP 
+1    300193     FERNANDO        OSUNA           HERNANDEZ       2 _9 _2005 H    SR  CURP 
+1    300467     LUCIA           JIMENEZ         RAMIREZ         1 _10_1907 M    MC  CURP 
+1    300503     SERGIO          SILVA           ALVAREZ         4 _8 _1910 H    HG  CURP 
+1    300681     CARLOS          NAVARRO         MORENO          21_9 _1934 H    MC  CURP 
+1    301017     LUISA           ROMERO          LOPEZ           2 _1 _1931 M    GT  CURP 
+1    301355     LUIS            ORTEGA          GARCIA          22_8 _1925 H    BC  CURP 
+1    301543     LUCIA           MORENO          HERNANDEZ       1 _8 _2081 M    QR  CURP 
+1    301842     ANA             DELGADO         DIAZ            15_5 _1964 M    VZ  CURP 
+1    301885     VALENTINA       NAVARRO         MORENO          12_4 _2053 M    SR  CURP 
+1    301993     MARTA           RODRIGUEZ       DELGADO         23_1 _1981 M    TC  CURP 
+1    302154     GABRIEL         MENDOZA         TORRES          15_1 _2068 H    MN  CURP 
+1    302168     CLAUDIA         ROJAS           SANCHEZ         8 _3 _2091 M    CC  CURP 
+1    302505     GABRIEL         DIAZ            ROMERO          13_11_1964 H    BS  CURP 
+1    302625     MIGUEL          FLORES          CASTRO          5 _3 _2020 H    ZS  CURP 
+1    302741     ISABEL          RUIZ            ALVAREZ         24_12_1960 M    TS  CURP 
+1    302971     CAMILA          VEGA            JIMENEZ         22_3 _2012 M    BS  CURP 
+1    303093     CLAUDIA         RUIZ            ACEVEDO         7 _5 _2014 M    AS  CURP 
+1    303195     ANDRES          MORALES         MORENO          27_11_2087 H    DF  CURP 
+1    303340     GABRIEL         DELGADO         MORENO          11_5 _2038 H    GR  CURP 
+1    303430     ALEJANDRO       JIMENEZ         JIMENEZ         25_12_1957 H    YN  CURP 
+1    303434     JUAN            OSUNA           ALVAREZ         1 _11_1960 H    OC  CURP 
+1    303557     CLAUDIA         OSUNA           OSUNA           27_9 _2012 M    MS  CURP 
+1    303829     SERGIO          RODRIGUEZ       NAVARRO         20_1 _2049 H    CH  CURP 
+1    304414     LAURA           MORENO          GARCIA          8 _12_2072 M    MN  CURP 
+1    304664     JUAN            SANCHEZ         MENDOZA         20_9 _2047 H    QR  CURP 
+1    304681     LUISA           FLORES          MORENO          12_7 _1921 M    TC  CURP 
+1    304827     VALENTINA       MORALES         ROJAS           17_5 _2053 M    ZS  CURP 
+1    305000     LUISA           NAVARRO         MORENO          4 _6 _2055 M    OC  CURP 
+1    305021     CARLOS          VARGAS          JIMENEZ         7 _9 _2083 H    BS  CURP 
+1    305030     ANA             RODRIGUEZ       RODRIGUEZ       2 _10_2047 M    ZS  CURP 
+1    305535     LUCIA           VEGA            TORRES          7 _1 _1959 M    NT  CURP 
+1    305973     LUCIA           GUERRERO        MENDOZA         15_7 _2044 M    HG  CURP 
+1    306365     ALEJANDRO       NAVARRO         LOPEZ           21_11_2060 H    AS  CURP 
+1    306410     RAFAEL          TORRES          ALVAREZ         4 _2 _2059 H    CH  CURP 
+1    306450     JUAN            ORTEGA          PEREZ           17_5 _2063 H    CC  CURP 
+1    306467     GABRIEL         SANCHEZ         RODRIGUEZ       3 _10_2074 H    CC  CURP 
+1    306486     RAFAEL          ALVAREZ         NAVARRO         19_1 _1977 H    HG  CURP 
+1    306559     VALENTINA       ALVAREZ         ORTEGA          8 _9 _2062 M    PL  CURP 
+1    306705     LUIS            ROMERO          RODRIGUEZ       8 _5 _1947 H    NL  CURP 
+1    307262     RAFAEL          FERNANDEZ       MORALES         14_1 _2003 H    TS  CURP 
+1    307296     ISABEL          FLORES          SANCHEZ         7 _2 _1958 M    TS  CURP 
+1    307487     ANDRES          FLORES          GUERRERO        23_12_1970 H    NL  CURP 
+1    307516     ANA             OSUNA           MORENO          17_9 _2064 M    CH  CURP 
+1    307572     DIEGO           OSUNA           JIMENEZ         25_8 _2043 H    MN  CURP 
+1    307815     LAURA           NAVARRO         JIMENEZ         21_11_1982 M    BS  CURP 
+1    308075     CARLOS          DELGADO         MENDOZA         27_3 _1972 H    DG  CURP 
+1    308166     ROSA            RODRIGUEZ       RAMIREZ         6 _5 _2032 M    CS  CURP 
+1    308281     CAMILA          JIMENEZ         FLORES          9 _1 _2038 M    SL  CURP 
+1    308419     JOSE            ROJAS           FERNANDEZ       18_8 _1950 H    VZ  CURP 
+1    308526     FERNANDO        ROMERO          RODRIGUEZ       9 _9 _2061 H    HG  CURP 
+1    308670     FERNANDO        CASTRO          ALVAREZ         3 _10_2058 H    MC  CURP 
+1    308683     PEDRO           ALVAREZ         PEREZ           25_4 _2092 H    MS  CURP 
+1    308779     LUISA           GARCIA          ROJAS           11_5 _1995 M    AS  CURP 
+1    308823     SERGIO          ORTEGA          SANCHEZ         1 _12_2069 H    AS  CURP 
+1    309166     RAFAEL          MENDOZA         MENDOZA         11_10_1995 H    NT  CURP 
+1    309261     ISABEL          OSUNA           MORALES         16_4 _1911 M    MN  CURP 
+1    309658     JUAN            ALVAREZ         VARGAS          23_4 _1906 H    NT  CURP 
+1    309676     DIEGO           MORALES         LOPEZ           3 _7 _1993 H    GT  CURP 
+1    309789     DIEGO           MORENO          PEREZ           25_11_2043 H    PL  CURP 
+1    309815     PEDRO           DELGADO         DIAZ            11_8 _1936 H    DG  CURP 
+1    309860     JUAN            ROJAS           VEGA            21_1 _1972 H    JC  CURP 
+1    310067     MARTA           PEREZ           CASTRO          5 _7 _2042 M    NL  CURP 
+1    310112     LUIS            ALVAREZ         OSUNA           11_10_1923 H    DF  CURP 
+1    310208     JAVIER          OSUNA           HERNANDEZ       7 _3 _2096 H    TC  CURP 
+1    310635     SERGIO          PEREZ           RAMIREZ         1 _1 _2047 H    GT  CURP 
+1    310647     LUISA           TORRES          TORRES          21_1 _1930 M    SR  CURP 
+1    311027     MARTA           GUERRERO        SILVA           11_10_1938 M    MS  CURP 
+1    311662     MIGUEL          CASTRO          FLORES          7 _6 _2002 H    DG  CURP 
+1    311672     ANDRES          GUERRERO        ORTEGA          15_1 _2067 H    NT  CURP 
+1    312164     CARMEN          PEREZ           SILVA           26_7 _2004 M    CS  CURP 
+1    312249     SERGIO          FLORES          FERNANDEZ       25_6 _1921 H    TL  CURP 
+1    312290     ALEJANDRO       SANCHEZ         DIAZ            6 _9 _2045 H    PL  CURP 
+1    312317     MIGUEL          ROJAS           VEGA            11_7 _1980 H    TC  CURP 
+1    312423     JUAN            VARGAS          ACEVEDO         22_2 _2049 H    SP  CURP 
+1    312623     SOFIA           SILVA           RAMIREZ         27_9 _2066 M    PL  CURP 
+1    312760     GABRIEL         DIAZ            PEREZ           11_8 _2013 H    CC  CURP 
+1    312941     LUCIA           CASTRO          FLORES          19_11_2084 M    NL  CURP 
+1    313030     JAVIER          ACEVEDO         MENDOZA         23_12_2062 H    CH  CURP 
+1    313093     CLAUDIA         RODRIGUEZ       CASTRO          14_10_1917 M    VZ  CURP 
+1    313234     ELENA           DIAZ            HERNANDEZ       15_2 _2062 M    TC  CURP 
+1    313712     RAFAEL          GUERRERO        VARGAS          3 _5 _2022 H    YN  CURP 
+1    313985     ELENA           DIAZ            OSUNA           18_8 _1902 M    QR  CURP 
+1    314146     CARMEN          GUERRERO        FLORES          14_5 _1920 M    GT  CURP 
+1    314460     ISABEL          RAMIREZ         PEREZ           4 _8 _2040 M    BC  CURP 
+1    314507     CLAUDIA         RODRIGUEZ       VARGAS          9 _8 _2052 M    HG  CURP 
+1    314629     LAURA           MORENO          VARGAS          22_11_2012 M    DF  CURP 
+1    314736     MIGUEL          RUIZ            RUIZ            5 _9 _1952 H    SP  CURP 
+1    314902     ANTONIO         DIAZ            VARGAS          6 _11_1921 H    BC  CURP 
+1    314924     LUCIA           DIAZ            OSUNA           13_6 _1962 M    HG  CURP 
+1    314945     MIGUEL          ALVAREZ         GARCIA          26_3 _2088 H    DG  CURP 
+1    315262     ANTONIO         ALVAREZ         NAVARRO         26_1 _1965 H    TS  CURP 
+1    315573     FERNANDO        LOPEZ           RAMIREZ         27_1 _2061 H    YN  CURP 
+1    315665     RAFAEL          PEREZ           ROMERO          23_6 _2025 H    OC  CURP 
+1    315890     JOSE            TORRES          ROMERO          12_10_2001 H    CS  CURP 
+1    316541     ANTONIO         FLORES          RUIZ            19_7 _2004 H    HG  CURP 
+1    316697     LAURA           ALVAREZ         JIMENEZ         9 _9 _2009 M    SR  CURP 
+1    316925     SOFIA           MORENO          SANCHEZ         26_4 _2060 M    HG  CURP 
+1    316944     ALEJANDRO       ROMERO          JIMENEZ         4 _3 _2038 H    PL  CURP 
+1    316972     GABRIEL         FLORES          FERNANDEZ       21_12_1907 H    GT  CURP 
+1    317223     MIGUEL          ROMERO          SILVA           6 _11_2019 H    SP  CURP 
+1    317432     JAVIER          ROJAS           MORALES         11_2 _1943 H    TS  CURP 
+1    317469     ISABEL          MORALES         SANCHEZ         1 _3 _2025 M    ZS  CURP 
+1    318318     LUIS            FERNANDEZ       ORTEGA          20_3 _2098 H    DG  CURP 
+1    318337     ISABEL          TORRES          LOPEZ           24_8 _2064 M    DF  CURP 
+1    318443     LUCIA           GARCIA          PEREZ           21_9 _1975 M    QR  CURP 
+1    318598     VALENTINA       DELGADO         MORENO          23_11_1907 M    YN  CURP 
+1    318643     CARLOS          GARCIA          FERNANDEZ       8 _1 _2012 H    BC  CURP 
+1    318716     ELENA           MENDOZA         FERNANDEZ       7 _7 _2071 M    GT  CURP 
+1    318958     MARTA           MORENO          SILVA           14_7 _1900 M    DG  CURP 
+1    319019     JUAN            ALVAREZ         MORALES         7 _1 _1983 H    BC  CURP 
+1    319090     RAFAEL          GARCIA          SANCHEZ         22_7 _2053 H    NL  CURP 
+1    319187     ISABEL          RODRIGUEZ       RODRIGUEZ       27_8 _2070 M    TS  CURP 
+1    319281     CARLOS          ROJAS           OSUNA           13_1 _2094 H    AS  CURP 
+1    319369     LAURA           ROMERO          FLORES          22_4 _2071 M    MS  CURP 
+1    319558     CLAUDIA         MORALES         VEGA            2 _3 _2096 M    SP  CURP 
+1    319569     ISABEL          MENDOZA         DIAZ            10_8 _2021 M    CS  CURP 
+1    319690     CLAUDIA         OSUNA           ORTEGA          7 _9 _2053 M    TL  CURP 
+1    319855     CARLOS          SANCHEZ         LOPEZ           9 _1 _1977 H    MS  CURP 
+1    319885     LUIS            ACEVEDO         PEREZ           25_5 _1906 H    CH  CURP 
+1    319923     PEDRO           OSUNA           ALVAREZ         3 _3 _2055 H    SP  CURP 
+1    320024     ELENA           ORTEGA          ACEVEDO         20_10_2086 M    YN  CURP 
+1    320037     JAVIER          VEGA            RAMIREZ         12_5 _2078 H    TC  CURP 
+1    320136     ISABEL          PEREZ           LOPEZ           8 _5 _2084 M    NL  CURP 
+1    320142     VALENTINA       MORENO          HERNANDEZ       5 _4 _2022 M    TS  CURP 
+1    320175     ANTONIO         RODRIGUEZ       GARCIA          5 _3 _1926 H    DF  CURP 
+1    320193     LUISA           SILVA           ALVAREZ         25_7 _2090 M    ZS  CURP 
+1    320418     RAFAEL          JIMENEZ         CASTRO          9 _1 _1972 H    CM  CURP 
+1    320675     PATRICIA        FLORES          ROMERO          1 _3 _2046 M    MN  CURP 
+1    320718     CARLOS          VARGAS          FERNANDEZ       17_6 _1981 H    BC  CURP 
+1    320783     LUIS            ORTEGA          RUIZ            20_10_1953 H    AS  CURP 
+1    320799     ISABEL          RUIZ            ORTEGA          15_4 _2015 M    OC  CURP 
+1    321025     ALEJANDRO       ROJAS           ROMERO          10_12_2084 H    ZS  CURP 
+1    321196     CAMILA          SANCHEZ         ROJAS           24_9 _2046 M    OC  CURP 
+1    321617     LUIS            ACEVEDO         PEREZ           2 _9 _2006 H    BC  CURP 
+1    322018     MARTA           NAVARRO         DELGADO         16_3 _1956 M    MN  CURP 
+1    322044     ELENA           ACEVEDO         JIMENEZ         5 _5 _1905 M    MC  CURP 
+1    322106     PATRICIA        VARGAS          SANCHEZ         18_12_1921 M    ZS  CURP 
+1    322336     JAVIER          LOPEZ           ORTEGA          12_9 _1951 H    MS  CURP 
+1    322501     ISABEL          NAVARRO         MORENO          24_9 _2049 M    VZ  CURP 
+1    322593     GABRIEL         LOPEZ           MORENO          20_5 _2019 H    MC  CURP 
+1    322758     LAURA           NAVARRO         FERNANDEZ       13_8 _2065 M    VZ  CURP 
+1    322813     CARMEN          ORTEGA          JIMENEZ         12_9 _1951 M    TL  CURP 
+1    323245     GABRIEL         ROMERO          SILVA           27_4 _2081 H    CS  CURP 
+1    323655     PATRICIA        MORALES         LOPEZ           17_10_2050 M    MS  CURP 
+1    323729     JOSE            DIAZ            VEGA            13_8 _2053 H    CC  CURP 
+1    323850     SOFIA           NAVARRO         ROMERO          21_6 _2034 M    CH  CURP 
+1    324155     RAFAEL          ROMERO          SILVA           26_6 _1943 H    TL  CURP 
+1    324182     SERGIO          CASTRO          NAVARRO         18_5 _2057 H    MN  CURP 
+1    324272     ANDRES          VEGA            ACEVEDO         3 _12_1986 H    MS  CURP 
+1    324307     PEDRO           MENDOZA         RAMIREZ         8 _2 _2014 H    TL  CURP 
+1    324390     JOSE            MORENO          ACEVEDO         20_11_1920 H    CC  CURP 
+1    324429     MARIA           SANCHEZ         OSUNA           15_10_2075 M    DG  CURP 
+1    324464     ANTONIO         NAVARRO         SANCHEZ         26_12_2061 H    CH  CURP 
+1    324484     MARTA           LOPEZ           GUERRERO        6 _8 _2041 M    YN  CURP 
+1    324596     JUAN            ROJAS           ROJAS           20_5 _1964 H    TC  CURP 
+1    324901     LUISA           MORENO          ORTEGA          5 _1 _2002 M    CM  CURP 
+1    324937     SERGIO          VEGA            SILVA           16_10_1964 H    CC  CURP 
+1    325011     LAURA           ROMERO          LOPEZ           5 _2 _2085 M    OC  CURP 
+1    325200     ISABEL          CASTRO          ORTEGA          15_6 _2098 M    VZ  CURP 
+1    325205     RAFAEL          ROMERO          GUERRERO        4 _4 _1998 H    DF  CURP 
+1    325269     SERGIO          PEREZ           RUIZ            18_8 _1966 H    VZ  CURP 
+1    325667     JOSE            FERNANDEZ       SILVA           13_3 _1911 H    CC  CURP 
+1    325734     ANA             GUERRERO        NAVARRO         21_12_2086 M    PL  CURP 
+1    325759     CARLOS          OSUNA           ORTEGA          23_1 _1955 H    SR  CURP 
+1    325760     LUISA           GARCIA          SILVA           23_3 _2040 M    NT  CURP 
+1    325898     JAVIER          NAVARRO         SANCHEZ         5 _10_2056 H    TS  CURP 
+1    326504     MARIA           GUERRERO        FLORES          26_3 _2089 M    CC  CURP 
+1    326869     ANDRES          LOPEZ           ROJAS           8 _8 _1955 H    MC  CURP 
+1    326890     DIEGO           RAMIREZ         MORALES         27_9 _2089 H    SR  CURP 
+1    327200     MARIA           LOPEZ           ORTEGA          26_7 _2080 M    TC  CURP 
+1    327415     ANDRES          ROMERO          VEGA            26_12_1967 H    YN  CURP 
+1    327432     LUISA           MORENO          DIAZ            23_2 _1910 M    NT  CURP 
+1    327593     ALEJANDRO       MENDOZA         VEGA            24_3 _1922 H    TS  CURP 
+1    327624     JAVIER          ROJAS           ROJAS           24_3 _1941 H    ZS  CURP 
+1    328009     FERNANDO        ROJAS           SANCHEZ         15_3 _1992 H    SR  CURP 
+1    328019     ALEJANDRO       RODRIGUEZ       TORRES          3 _8 _2002 H    VZ  CURP 
+1    328027     MARTA           NAVARRO         VARGAS          7 _12_2070 M    SL  CURP 
+1    328162     JAVIER          ROMERO          RUIZ            12_6 _1997 H    BS  CURP 
+1    328182     VALENTINA       PEREZ           MORALES         18_12_2028 M    QR  CURP 
+1    328318     ANA             CASTRO          RUIZ            5 _9 _1972 M    OC  CURP 
+1    328489     CLAUDIA         NAVARRO         DELGADO         12_3 _1920 M    NL  CURP 
+1    328791     MARTA           GARCIA          RODRIGUEZ       17_12_2079 M    GR  CURP 
+1    329253     SERGIO          PEREZ           MORENO          9 _7 _1931 H    ZS  CURP 
+1    329492     ANTONIO         TORRES          MENDOZA         12_8 _1910 H    CS  CURP 
+1    329657     PATRICIA        RAMIREZ         SANCHEZ         3 _4 _2056 M    ZS  CURP 
+1    329763     ANDRES          DIAZ            ORTEGA          3 _6 _1900 H    MS  CURP 
+1    329975     DIEGO           ACEVEDO         JIMENEZ         3 _3 _1965 H    CS  CURP 
+1    330836     MARTA           ALVAREZ         TORRES          13_4 _2048 M    TC  CURP 
+1    331060     MARTA           ACEVEDO         TORRES          15_1 _2015 M    MN  CURP 
+1    331172     LUCIA           ORTEGA          NAVARRO         1 _11_1926 M    SP  CURP 
+1    331185     FERNANDO        RUIZ            FERNANDEZ       1 _6 _2045 H    NL  CURP 
+1    331556     ISABEL          ORTEGA          MORALES         5 _6 _1944 M    VZ  CURP 
+1    331673     PATRICIA        GARCIA          VARGAS          25_7 _1972 M    SR  CURP 
+1    331982     ROSA            ACEVEDO         HERNANDEZ       19_9 _2094 M    SP  CURP 
+1    332196     SERGIO          ROMERO          RUIZ            9 _6 _1971 H    GT  CURP 
+1    332356     MARTA           RODRIGUEZ       ALVAREZ         7 _9 _2056 M    TS  CURP 
+1    332745     LUCIA           DIAZ            DELGADO         14_7 _1968 M    DF  CURP 
+1    304872     PATRICIA        RAMIREZ         RODRIGUEZ       19_1 _1980 M    QR  CURP 
+1    313713     PATRICIA        ALVAREZ         MORENO          23_1 _2068 M    CS  CURP 
+1    323779     MIGUEL          RODRIGUEZ       TORRES          22_6 _1995 H    BC  CURP 
+1    326835     VALENTINA       HERNANDEZ       VARGAS          6 _5 _1971 M    GR  CURP 
+1    305602     MARIA           OSUNA           TORRES          12_2 _2062 M    AS  CURP 
+1    301836     CARLOS          DIAZ            MORALES         14_5 _2040 H    VZ  CURP 
+1    307740     CARMEN          SANCHEZ         MORENO          3 _8 _1980 M    TS  CURP 
+1    300707     ALEJANDRO       NAVARRO         HERNANDEZ       20_9 _1981 H    QR  CURP 
+1    316225     PEDRO           HERNANDEZ       OSUNA           14_12_2062 H    QR  CURP 
+1    317922     CAMILA          FERNANDEZ       DELGADO         20_7 _2017 M    SP  CURP 
+1    303335     MIGUEL          OSUNA           GUERRERO        8 _8 _1940 H    TL  CURP 
+1    324791     ALEJANDRO       JIMENEZ         MENDOZA         4 _2 _1933 H    CM  CURP 
+1    326253     ANTONIO         TORRES          GARCIA          21_8 _1944 H    CS  CURP 
+1    318864     ANTONIO         VARGAS          SILVA           27_8 _2094 H    QR  CURP 
+1    321323     CARMEN          SANCHEZ         DELGADO         18_4 _2010 M    OC  CURP 
+1    328470     RAFAEL          ACEVEDO         CASTRO          6 _3 _2079 H    MS  CURP 
+1    323487     CAMILA          OSUNA           ACEVEDO         22_10_2079 M    CH  CURP 
+1    318965     JOSE            PEREZ           PEREZ           2 _3 _1969 H    AS  CURP 
+1    312998     PEDRO           RAMIREZ         SILVA           5 _5 _1944 H    GT  CURP 
+1    329264     JAVIER          FERNANDEZ       GARCIA          20_12_1901 H    DF  CURP 
+1    319771     LUIS            PEREZ           SANCHEZ         10_10_2065 H    GT  CURP 
+1    300495     PEDRO           FLORES          GARCIA          19_4 _1915 H    TL  CURP 
+1    315279     ISABEL          DIAZ            NAVARRO         16_6 _2007 M    PL  CURP 
+1    322290     RAFAEL          VARGAS          VARGAS          17_3 _1925 H    PL  CURP 
+1    302330     JAVIER          PEREZ           ALVAREZ         16_8 _1946 H    OC  CURP 
+1    308616     CARMEN          RUIZ            DIAZ            26_10_2035 M    SL  CURP 
+1    323224     CLAUDIA         JIMENEZ         RUIZ            22_10_2072 M    CH  CURP 
+1    309561     VALENTINA       GARCIA          FLORES          19_8 _2082 M    QR  CURP 
+1    324684     RAFAEL          ROMERO          CASTRO          8 _6 _1936 H    TL  CURP 
+1    318028     FERNANDO        SANCHEZ         VEGA            23_8 _2056 H    MN  CURP 
+1    308793     VALENTINA       JIMENEZ         JIMENEZ         22_5 _2007 M    DF  CURP 
+1    326790     PATRICIA        ROJAS           GARCIA          15_7 _1990 M    TS  CURP 
+1    312189     ANTONIO         RUIZ            ROJAS           17_12_1953 H    NL  CURP 
+1    327005     CARMEN          ROMERO          RUIZ            24_7 _1968 M    NT  CURP 
+1    329515     JAVIER          DELGADO         PEREZ           27_1 _1938 H    BS  CURP 
+1    308978     ANDRES          RODRIGUEZ       DIAZ            3 _6 _1943 H    TL  CURP 
+1    320502     PEDRO           NAVARRO         FLORES          7 _6 _1937 H    AS  CURP 
+1    331690     MARTA           DIAZ            TORRES          17_7 _1977 M    BS  CURP 
+1    326705     CAMILA          ROJAS           FERNANDEZ       18_5 _2066 M    OC  CURP 
+1    307811     CARLOS          LOPEZ           ROMERO          23_7 _2089 H    BS  CURP 
+1    330502     RAFAEL          GUERRERO        OSUNA           19_1 _1903 H    PL  CURP 
+1    308636     LUISA           MORALES         TORRES          9 _11_2031 M    DF  CURP 
+1    310556     JOSE            HERNANDEZ       GUERRERO        16_5 _1903 H    GT  CURP 
+1    312319     VALENTINA       GARCIA          VARGAS          26_7 _2075 M    GT  CURP 
+1    317954     MARIA           MENDOZA         ROJAS           6 _3 _1993 M    CH  CURP 
+1    317233     ANA             SANCHEZ         MENDOZA         12_6 _2038 M    JC  CURP 
+1    302352     CARMEN          ALVAREZ         OSUNA           17_7 _2090 M    PL  CURP 
+1    316895     JAVIER          SANCHEZ         TORRES          23_12_2094 H    VZ  CURP 
+1    304042     JUAN            RUIZ            ROJAS           27_1 _2045 H    SP  CURP 
+1    325710     ANTONIO         FERNANDEZ       VARGAS          23_4 _1962 H    BS  CURP 
+1    305154     PEDRO           OSUNA           TORRES          18_1 _2030 H    YN  CURP 
+1    314118     JAVIER          GARCIA          FERNANDEZ       25_8 _1970 H    DG  CURP 
+1    305869     LUCIA           JIMENEZ         FERNANDEZ       3 _10_1979 M    MC  CURP 
+1    331088     MIGUEL          CASTRO          FLORES          16_12_1940 H    DG  CURP 
+1    328580     JUAN            GARCIA          TORRES          20_12_1920 H    MC  CURP 
+1    332179     FERNANDO        VARGAS          TORRES          8 _3 _2002 H    SL  CURP 
+1    319022     ALEJANDRO       ROMERO          PEREZ           3 _2 _2017 H    TL  CURP 
+1    311267     ANTONIO         SANCHEZ         ACEVEDO         6 _2 _1919 H    QR  CURP 
+1    313028     RAFAEL          DIAZ            VARGAS          9 _5 _2072 H    OC  CURP 
+1    325428     JOSE            MORALES         CASTRO          7 _1 _1971 H    VZ  CURP 
+1    316840     PEDRO           VEGA            DIAZ            1 _10_1974 H    TC  CURP 
+1    317461     ROSA            GARCIA          ACEVEDO         8 _4 _2051 M    DF  CURP 
+1    306640     JUAN            HERNANDEZ       VEGA            2 _6 _1959 H    DF  CURP 
+1    332765     JOSE            VARGAS          ORTEGA          23_7 _1983 H    PL  CURP 
+1    300175     FERNANDO        NAVARRO         MENDOZA         5 _1 _2099 H    ZS  CURP 
+1    310700     ANA             GUERRERO        RODRIGUEZ       25_1 _2040 M    VZ  CURP 
+1    314398     CAMILA          ACEVEDO         VARGAS          26_8 _1914 M    MC  CURP 
+1    319161     CAMILA          ALVAREZ         GARCIA          24_4 _1976 M    CC  CURP 
+1    316760     ISABEL          FERNANDEZ       SANCHEZ         26_7 _1965 M    TL  CURP 
+1    312759     JAVIER          ROMERO          OSUNA           6 _10_2093 H    SP  CURP 
+1    303690     GABRIEL         ORTEGA          RODRIGUEZ       21_6 _1998 H    CH  CURP 
+1    311647     JUAN            RODRIGUEZ       CASTRO          3 _10_2098 H    MS  CURP 
+1    320123     LUIS            OSUNA           TORRES          19_2 _1934 H    VZ  CURP 
+1    311393     ANA             DIAZ            LOPEZ           13_1 _1923 M    CS  CURP 
+1    310048     JOSE            ROMERO          SANCHEZ         11_4 _1990 H    SL  CURP 
+1    310599     MARTA           ROMERO          GUERRERO        27_7 _2089 M    BS  CURP 
+1    311447     CAMILA          VEGA            MENDOZA         20_10_1926 M    TL  CURP 
+1    326412     MARIA           RODRIGUEZ       RUIZ            21_11_1941 M    YN  CURP 
+1    308187     JOSE            ROJAS           MORALES         15_4 _1986 H    GR  CURP 
+1    325502     PEDRO           FERNANDEZ       JIMENEZ         25_5 _1972 H    JC  CURP 
+1    306646     SERGIO          RAMIREZ         ALVAREZ         24_1 _1965 H    DF  CURP 
+1    305821     DIEGO           SILVA           SANCHEZ         23_12_2034 H    CS  CURP 
+1    316334     PEDRO           ACEVEDO         OSUNA           19_5 _2090 H    TS  CURP 
+1    310935     CARLOS          JIMENEZ         ROMERO          24_9 _2073 H    CH  CURP 
+1    309905     CLAUDIA         DELGADO         SILVA           15_3 _1947 M    CS  CURP 
+1    324115     SERGIO          SANCHEZ         GARCIA          17_4 _2094 H    HG  CURP 
+1    300675     LUISA           JIMENEZ         MORENO          6 _6 _1938 M    CC  CURP 
+1    319203     ANTONIO         RAMIREZ         TORRES          1 _11_1978 H    VZ  CURP 
+1    327478     ANDRES          ROJAS           CASTRO          3 _10_1963 H    VZ  CURP 
+1    325981     PATRICIA        SANCHEZ         NAVARRO         10_4 _1948 M    SP  CURP 
+1    315137     SERGIO          JIMENEZ         MORENO          12_6 _1959 H    YN  CURP 
+1    317668     GABRIEL         ROJAS           MORENO          4 _5 _1991 H    BS  CURP 
+1    308072     JUAN            MORALES         VARGAS          4 _6 _2036 H    NL  CURP 
+1    313452     JUAN            VEGA            SANCHEZ         25_3 _1927 H    BC  CURP 
+1    312274     JOSE            ROJAS           CASTRO          9 _2 _1962 H    CM  CURP 
+1    314878     JOSE            NAVARRO         JIMENEZ         17_6 _2093 H    NT  CURP 
+1    305767     FERNANDO        TORRES          RAMIREZ         11_7 _2090 H    BC  CURP 
+1    318085     ELENA           DIAZ            ORTEGA          16_3 _1986 M    JC  CURP 
+1    322597     CARMEN          RODRIGUEZ       VARGAS          14_2 _2027 M    GR  CURP 
+1    309102     MARIA           RODRIGUEZ       DELGADO         5 _9 _1990 M    MC  CURP 

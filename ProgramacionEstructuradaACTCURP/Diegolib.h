@@ -556,9 +556,8 @@ int pos17(int na){
             return 'J';
             break;
         }
-        return 0;
+        return 'A';
 }
-
 
 int consonate(char arreglo[]){
         for(int i=1; arreglo[i]!='\0';i++){
@@ -573,11 +572,77 @@ int antisonante(char arreglo[]){
     const char *ecep[94] = { "BACA", "LOCO", "BAKA", "LOKA", "BUEI", "LOKO", "BUEY", "MAME", "CACA", "MAMO", "CACO", "MEAR", "CAGA", "MEAS", "CAGO", "MEON", "CAKA", "MIAR", "CAKO", "MION", "COGE", "MOCO", "COGI", "MOKO", "COJA", "MULA", "COJE", "MULO", "COJI", "NACA", "COJO", "NACO", "COLA", "CULO", "PEDA", "CULO", "PEDO", "FALO", "PENE", "FETO", "PIPI", "GETA", "PITO", "GUEI", "POPO", "GUEY", "PUTA", "JETA", "PUTO", "JOTO", "QULO", "RATA", "RATA", "RATA", "ROBA", "RATA", "ROBE", "ROBO", "KAKA", "RUIN", "KAKO", "SENO", "KOGE", "TETA", "KOJA", "VAGA", "KOJE", "VAGO", "KOJI", "VAKA", "KOJO", "VUEI", "KOLA", "VUEY", "KULO", "LILO", "LOCA"};   
 
    for(int i=0;i<94;i++){
-                if (strcmp(ecep[i], arreglo) == 0)  
-                {
-                    return 0;
-                }
+         if (strcmp(ecep[i], arreglo) == 0)  
+         {
+            return 0;
+        }
             }
-            return 1;
+        return 1;
+
+}
+char numacar(int num){
+    if(num==9){
+        return 57;
+    }
+    if(num==8){
+        return 56;
+    }
+    if(num==7){
+        return 55;
+    }
+    if(num==6){
+        return 54;
+    }
+    if(num==5){
+        return 53;
+    }
+    if(num==4){
+        return 52;
+    }
+    if(num==3){
+        return 51;
+    }
+    if(num==2){
+        return 50;
+    }
+    if(num==1){
+        return 49;
+    }
+    if(num==0){
+        return 48;
+    }
+}
+
+char num17(int num){
+    if (num==0){
+        return 'A';
+    }
+    if (num==1){
+        return 'B';
+    }
+    if (num==2){
+        return 'C';
+    }
+    if (num==3){
+        return 'D';
+    }
+    if (num==4){
+        return 'E';
+    }
+    if (num==5){
+        return 'F';
+    }
+    if (num==6){
+        return 'G';
+    }
+    if (num==7){
+        return 'H';
+    }
+    if (num==8){
+        return 'I';
+    }
+    if (num==9){
+        return 'J';
+    }
 
 }

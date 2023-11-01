@@ -39,7 +39,7 @@ int main(){
     //estado-------------------------
     estado();
     confirmar();
-    printf("\n%c_%c_%c_%c_%d_%d_%d_%d_%d_%d_%c_%c_%c_%c_%c_%c_%c_%d_",curp[1],curp[2],curp[3],curp[4],ncurp[5],ncurp[6],ncurp[7],ncurp[8],ncurp[9],ncurp[10],curp[11],curp[12],curp[13],curp[14],curp[15],curp[16],ncurp[17],ncurp[18]);
+    printf("\n%c_%c_%c_%c_%d_%d_%d_%d_%d_%d_%c_%c_%c_%c_%c_%c_%c_%d_",curp[1],curp[2],curp[3],curp[4],ncurp[5],ncurp[6],ncurp[7],ncurp[8],ncurp[9],ncurp[10],curp[11],curp[12],curp[13],curp[14],curp[15],curp[16],curp[17],ncurp[18]);
     return 0;
 }
 
@@ -102,8 +102,7 @@ void apellido2(){
         //printf("pos 3 ==  %c\n",'X');
         curp[3]='X';
     }
-    curp[15]=consonate(aapellido2);
-    
+    curp[15]=consonate(aapellido2);   
 }
 
 void pfecha(){
@@ -113,7 +112,6 @@ void pfecha(){
     int nmes=0;
     char dia [1];
     int ndia=0;
-
     int ban;
     do{
         printf("INGRESA UNA FECHA VALIDA\n");
@@ -183,13 +181,13 @@ void pfecha(){
 
     if(na<2000)
     {
+        curp[17]=numacar(((na/10)%10));
         //printf("pos 17 ==  %d\n",(na/10)%10); 
-        ncurp[17]=(na/10)%10;
     }
     else
     {
         //printf("pos 17 ==  %C\n",pos17(na));
-        ncurp[17]=pos17(na);
+        curp[17]=num17(((na/10)%10));
     }
 }
 
@@ -282,11 +280,9 @@ void confirmar(){
     anti[1]=curp[2];
     anti[2]=curp[3];
     anti[3]=curp[4];
-    if(antisonante(anti)==0){
-        curp[2]='X';
-    }
-    
-
+    //if(antisonante(anti)!=1){
+    //    curp[2]='X';
+    //}
 }
 
 
