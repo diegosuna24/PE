@@ -1,0 +1,2 @@
+EST  MATRICULA  NOMBRE          APP             APM             EDAD   SEXO 
+7

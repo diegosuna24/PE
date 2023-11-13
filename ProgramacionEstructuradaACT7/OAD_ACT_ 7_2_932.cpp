@@ -24,14 +24,14 @@ int msges()
     system("CLS");
     printf(" MENU \n");
     printf("Escoge una opciosn\n");
-    printf("MAYUSCULAS \n");
-    printf("MINUSCULAS \n");
-    printf("CAPITAL \n");
-    printf("CANTIDAD CARACTERES \n");
-    printf("REVERSA \n");
-    printf("NO ESPACIOS \n");
-    printf("CARACTERES ALFABETICOS \n");
-    printf("IMPRIMIR \n");
+    printf("1 == MAYUSCULAS \n");
+    printf("2 == MINUSCULAS \n");
+    printf("3 == CAPITAL \n");
+    printf("4 == CANTIDAD CARACTERES \n");
+    printf("5 == REVERSA \n");
+    printf("6 == NO ESPACIOS \n");
+    printf("7 == CARACTERES ALFABETICOS \n");
+    printf("8 == IMPRIMIR \n");
     scanf("%d", &op);
     return op;
 }
@@ -41,8 +41,7 @@ void menu()
     int op;
     char cadena[30];
     printf("Ingrese una cadena:");
-    fflush(stdin);
-    gets(cadena);
+    fgets(cadena,30,stdin);
     do {
         op = msges();
         system("CLS");
@@ -88,6 +87,7 @@ void Mayusculas(char cadena[])
             caracter -= 32; 
         }
         cadena[i] = caracter;
+        printf("%c", cadena[i]);
     }
 }
 
@@ -101,36 +101,54 @@ void Minusculas(char cadena[])
             caracter += 32; 
         }
         cadena[i] = caracter;
+        printf("%c", cadena[i]);
     }
 }
 
 void Capital (char cadena[])
 {
-    char caracter;
     if (cadena[0] >= 'a' && cadena[0] <= 'z')
     {
         cadena[0] -= 32; 
+        printf("%c", cadena[0]);
     }
-    printf("%c", cadena[0]);
-
-    for (int i = 0; cadena[i] != '\0'; i++)
+    else
     {
-        if (cadena[i+1] == '\0' && (cadena[i+1] >= 'a' && cadena[i+1] <= 'z'))
-        {
-            cadena[i] -= 32; 
-        }
+        printf("%c", cadena[0]);
+    }
 
+     for (int i = 1; cadena[i] != '\0'; i++)
+    {
+        if (cadena[i] >= 'A' && cadena[i] <= 'Z')
+        {
+            cadena[i] += 32; 
+        }
+        cadena[i] = cadena[i];
+    }
+    
+
+    for (int i = 1; cadena[i] != '\0'; i++)
+    {
+        if (cadena[i] == ' ' )
+        {
+            if(cadena[i+1] >= 'a' && cadena[i+1] <= 'z')
+            {
+            cadena[i+1] -= 32; 
+            }
+        }
+        
+        printf("%c", cadena[i]);
     }
 }
 
 void CantidadCaracteres (char cadena[])
 {
     int cantidad;
-    for (int i = 0; cadena[1] != '\0'; i++)
+    for (int i = 0; cadena[i] != '\0'; i++)
     {
         cantidad=i;
     }     
-    printf("Hay %d caracteres", cantidad);
+    printf("Hay %d caracteres\n", cantidad);
 }
 
 void Reversa(char cadena[])
@@ -141,7 +159,7 @@ void Reversa(char cadena[])
         cantidad=i;
         }
 
-    for (int i=cantidad - 1; i = 0; i--)
+    for (int i=cantidad - 1; i >= 0; i--)
     {
         printf("%c", cadena[i]);
     }
@@ -166,23 +184,6 @@ void NoEspacios(char cadena[])
 void Alfa(char cadena[])
 {
 
-    int i, j;
-    char cadena2[30];
-
-    for (i = 0, j = 0; cadena[i] != '\0'; i++)
-    {
-        for ( j = 0; cadena[i] != '\0'; i++){
-        if ((cadena[i] == ' ') || (cadena[i] >= 'a' && cadena[i] <= 'z') || (cadena[i] >= 'A' && cadena[i] <= 'Z'))
-        {
-            if (cadena[i] != ' ' || (i > 0 && cadena[i + 1] != '\0' && cadena[i - 1] != ' '))
-            {
-                cadena2[j] = cadena[i];
-                printf("%c", cadena2[j]);
-                j++;
-            }
-        }
-        }
-    }
 }
 
 void Fun(char cadena[])
@@ -193,9 +194,12 @@ void Fun(char cadena[])
     Minusculas(cadena);
     printf("Capital: \n");
     Capital(cadena);
-    printf("Sin Espacios: \n");
-    NoEspacios (cadena);
+    printf("Cantidad de caracteres \n");
+    CantidadCaracteres(cadena);
     printf("Al reves: \n");
     Reversa(cadena);
+    printf("\nSin Espacios: \n");
+    NoEspacios (cadena);
+    
 }
 

@@ -46,8 +46,7 @@ void menu()
 {
     int operacion;
     printf("Ingrese una cadena: ");
-    fflush(stdin);
-    gets (cadena);
+    fgets (cadena,20,stdin);
     mayusculas(cadena);
 
     do
@@ -86,6 +85,9 @@ void menu()
         case 10:
             Salida10 (cadena);
             break;
+        default:
+            break;
+            
         }
         printf("\n\n");
     } while (operacion != 0);
@@ -113,7 +115,7 @@ int largoCadena(char cadena[])
     return i;
 }
 
-void salida1 (char cadena[])
+void Salida1 (char cadena[])
 {
     int i;
     for (i = 0; cadena[i] !='\0'; i++)
@@ -121,7 +123,7 @@ void salida1 (char cadena[])
         printf("%c", cadena[i]);
     }
 }
-void salida2 (char cadena[])
+void Salida2 (char cadena[])
 {
     int  lar;
 
@@ -220,7 +222,7 @@ void Salida9 (char cadena[])
 {
     for (int i = 0; cadena[i] != '\0'; i++)
     {
-        if (cadena[i] == 'A' && cadena[i] == 'E' && cadena[i] == 'I' && cadena[i] == 'O' && cadena[i] == 'U')
+        if (cadena[i] == 'A' || cadena[i] == 'E' || cadena[i] == 'I' || cadena[i] == 'O' || cadena[i] == 'U')
         {
             printf("%c", cadena[i]);
         }

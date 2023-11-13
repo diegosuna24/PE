@@ -307,7 +307,6 @@ void cap()
             }
         }
     }
-    printf("nombre despues de mayus == %s", anombre);
 }
 
 void cap1()

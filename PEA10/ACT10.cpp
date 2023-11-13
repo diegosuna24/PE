@@ -121,7 +121,6 @@ void alummanual(int numcont) {
     do {
         printf("Ingresa un nombre (MAYUSCULAS) ;  \n");
         fgets(temp, sizeof(temp), stdin);
-        getchar();
     } while (valmayuscaracter(temp) == 0);
     temp[strcspn(temp, "\n")] = 0; // Eliminar el salto de línea al final
     strcpy(numalum[numcont].nombre, temp);

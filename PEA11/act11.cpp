@@ -240,7 +240,6 @@ void manual(){
 
     printf("%s\n",vect[n].estado);
 
-
 }
 
 void preguntarcadena(int num){
