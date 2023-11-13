@@ -1,3 +1,8 @@
+//Diego Osuna Acevedo 372273
+//12 noviembre 2023
+//Programa que contenga el menú anterior, el programa utiliza un vector de registros de máximo 1,500 registros, de la siguiente estructura: [status, matricula, ApPat, ApMat, Nombre, Edad, sexo] donde el campo llave es matricula. 
+//datos.txt  es el archivo con los registros a cargar en el vector de registros//
+//OAD_ACT_ 12_932
 #include<stdio.h>
 #include<stdlib.h>
 #include <time.h>
@@ -300,20 +305,18 @@ int cantidad(char nombre[50]) {
     int cont = 0;
 
     FILE *arc;
-    arc = fopen(strcat(nombre,".txt"), "r"); // Se corrigió la concatenación aquí
-    
+    arc = fopen(strcat(nombre,".txt"), "r"); 
     if (arc == NULL) {
         printf("Error al abrir el archivo.\n");
     } 
     else 
     {
         while ((caracter = fgetc(arc)) != EOF) {
-            // Si encuentra un salto de línea, incrementa el contador de líneas
             if (caracter == '\n') {
                 cont++;
             }
         }
-        fclose(arc); // Siempre es buena práctica cerrar el archivo después de usarlo
+        fclose(arc); 
     }
     return cont;
 }
