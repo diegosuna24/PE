@@ -1,6 +1,8 @@
 #include <SDL2/SDL_error.h>
+#include <SDL2/SDL_keycode.h>
 #include <SDL2/SDL_render.h>
 #include <SDL2/SDL_surface.h>
+#include <SDL2/SDL_timer.h>
 #include <SDL2/SDL_video.h>
 #include <SDL2/SDL_ttf.h>
 #ifdef _WIN32
@@ -14,6 +16,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <stdbool.h>
+#include <time.h>
 
 #include "shaders.h"
 
@@ -72,14 +75,24 @@ int main(int argc, char *argv[])
 	ballObj ball = malloc(sizeof(tball));
 	char *p1_text_score = malloc(sizeof(char)*32);
 	char *p2_text_score = malloc(sizeof(char)*32);
+	char *scoreboards = malloc(sizeof(char)*1500);
 	Mix_Chunk *bounce1;
 	Mix_Chunk *russiaWins;
 	Mix_Chunk *americaWins;
-	Mix_MasterVolume(75);
 	int game_start = 0;
 	int scored = 0;
 	float mult_vert = 2.5f;
 	float mult_hor = 2.5f;
+	FILE *archivo;
+	const char *score_file = "scores.txt";
+	const char *story_file = "guion.txt";
+	time_t current_time;
+	struct tm *info_time;
+	int menu_opt = 0;
+
+	float y_text_pos = 0;
+	
+	Mix_MasterVolume(75);
 	paddle_p1->x = 25.0f;
 	paddle_p1->y = 150.0f;
 	paddle_p1->width = 20.0f;
@@ -201,6 +214,10 @@ int main(int argc, char *argv[])
 	img_surf = IMG_Load("ball.png");
 	ball->tex = SDL_CreateTextureFromSurface(renderer, img_surf);
 	SDL_FreeSurface(img_surf);
+	img_surf = IMG_Load("guion_bkg.png");
+	SDL_Texture *guion_bkg = SDL_CreateTextureFromSurface(renderer, img_surf);
+	img_surf = IMG_Load("scores_bkg.png");
+	SDL_Texture *scores_bkg = SDL_CreateTextureFromSurface(renderer, img_surf);
 	
 	if (!img_tex)
 	{
@@ -236,19 +253,19 @@ int main(int argc, char *argv[])
     introPosition.h = 400; //
  // Duración total de la introducción en milisegundos
 
-    SDL_Texture *introTexture = NULL;
-    SDL_Surface *introSurface = IMG_Load("fondo_intro.png"); 
-    if (!introSurface) {
-        printf("NO SE CARGO LA INTRO IMAGEN");
-    }
+SDL_Texture *introTexture = NULL;
+SDL_Surface *introSurface = IMG_Load("fondo_intro.png");
+if (!introSurface) {
+    printf("NO SE CARGO LA INTRO IMAGEN");
+}
 
-    introTexture = SDL_CreateTextureFromSurface(renderer, introSurface);
-    SDL_FreeSurface(introSurface);
+introTexture = SDL_CreateTextureFromSurface(renderer, introSurface);
+SDL_FreeSurface(introSurface);
 
-    const Uint32 TIEMPO_TOTAL_INTRODUCCION = 5000;
-    Uint32 introStartTime = SDL_GetTicks();
+const Uint32 TIEMPO_TOTAL_INTRODUCCION = 5000;
+Uint32 introStartTime = SDL_GetTicks();
 
-    Uint32 introTime = 0; // Inicializar introTime aquí
+Uint32 introTime = 0; // Inicializar introTime aquí
 
 	while (introTime <= TIEMPO_TOTAL_INTRODUCCION) {
 		  Uint32 introTime = SDL_GetTicks() - introStartTime;
@@ -302,18 +319,108 @@ int main(int argc, char *argv[])
 				{
 					menu = 0;
 				}
+				if (event.key.keysym.sym == SDLK_BACKSPACE)
+				{
+					menu_opt = 0;
+					archivo = NULL;
+				}
+				if (event.key.keysym.sym == SDLK_s)
+				{
+					menu_opt = 1;
+					y_text_pos = 0;
+				}
+				if (event.key.keysym.sym == SDLK_g)
+				{
+					menu_opt = 2;
+				}
 			}
 		}
 
-		SDL_RenderClear(renderer);
-		
-		SDL_RenderCopy(renderer, menu_bkg, NULL, NULL);
-		
-		SDL_RenderPresent(renderer);
+		if (menu_opt == 0) {
+			SDL_RenderClear(renderer);
+			
+			SDL_RenderCopy(renderer, menu_bkg, NULL, NULL);
+			
+			SDL_RenderPresent(renderer);
+		}
+		if (menu_opt == 1) {
+			SDL_RenderClear(renderer);
+			SDL_RenderCopy(renderer, scores_bkg, NULL, NULL);
+
+			FILE *archivo = fopen(score_file, "r");
+			if (archivo == NULL) {
+				printf("No se pudo abrir el archivo\n");
+			}
+
+			float y_pos = 400;
+
+			char buffer[256];
+
+			while (fgets(buffer, sizeof(buffer), archivo) != NULL) {
+				char *newline = strchr(buffer, '\n');
+				if (newline != NULL) {
+					*newline = '\0';
+				}
+
+				SDL_Color color = {45, 35, 35, 255};
+				SDL_Rect dstRect = {250, y_pos+y_text_pos, 500, 25};
+				SDL_Surface *img_surf = TTF_RenderText_Solid(font, buffer, color);
+				SDL_Texture *score_tex = SDL_CreateTextureFromSurface(renderer, img_surf);
+				SDL_RenderCopy(renderer, score_tex, NULL, &dstRect);
+
+				y_pos += 25;
+
+				SDL_FreeSurface(img_surf);
+				SDL_DestroyTexture(score_tex);
+			}
+			y_text_pos -= 0.5;
+
+			fclose(archivo);
+
+			SDL_RenderPresent(renderer);
+		}
+		if (menu_opt == 2) {
+			SDL_RenderClear(renderer);
+			SDL_RenderCopy(renderer, guion_bkg, NULL, NULL);
+
+			FILE *archivo = fopen(story_file, "r");
+			if (archivo == NULL) {
+				printf("No se pudo abrir el archivo\n");
+				return 1;
+			}
+
+			float y_pos = 350;
+
+			char buffer[256];
+
+			while (fgets(buffer, sizeof(buffer), archivo) != NULL) {
+				char *newline = strchr(buffer, '\n');
+				if (newline != NULL) {
+					*newline = '\0';
+				}
+
+				SDL_Rect dstRect = {25, y_pos+y_text_pos, 950, 25};
+				SDL_Surface *img_surf = TTF_RenderText_Solid(font, buffer, color);
+				SDL_Texture *score_tex = SDL_CreateTextureFromSurface(renderer, img_surf);
+				SDL_RenderCopy(renderer, score_tex, NULL, &dstRect);
+
+				y_pos += 30;
+
+				SDL_FreeSurface(img_surf);
+				SDL_DestroyTexture(score_tex);
+			}
+			y_text_pos -= 10;
+
+			fclose(archivo);
+
+			SDL_RenderPresent(renderer);
+		}
+		SDL_Delay(10);
 	}
 	backgroundMusic = Mix_LoadMUS("musica_fondo.wav");
     if (!backgroundMusic) {
     printf("Error al cargar la música de fondo: %s\n", Mix_GetError());
+    // Manejar el error (puede ser que el archivo no exista o no se pueda cargar)
     }
 	while (true)
 	{
@@ -374,6 +481,7 @@ int main(int argc, char *argv[])
 
 			// Incrementar la velocidad de la pelota después de anotar un punto
 			printf("Velocidad X: %f, Velocidad Y: %f\n", ball->spd_x, ball->spd_y);
+
 		}
 
 		if (ball->x >= paddle_p1->x && ball->x < paddle_p1->width+ball->r && ball->y + ball->r >= paddle_p1->y && ball->y <= paddle_p1->y + paddle_p1->height)
@@ -396,6 +504,53 @@ int main(int argc, char *argv[])
 				scored = 1;
 			}
 		}
+
+		if(paddle_p1->score >= 5 || paddle_p2->score >= 5)
+		{
+			archivo = fopen(score_file, "r");
+			if (archivo == NULL)
+			{
+				printf("Creando archivo\n");
+				archivo = fopen(score_file, "w");
+				if (archivo == NULL)
+				{
+					printf("Algo falló\n");
+					return 1;
+				}
+			}
+			else
+			{
+				fclose(archivo);
+				archivo = fopen(score_file, "a");
+			}
+			if (archivo == NULL)
+			{
+				printf("No se pudo abrir el archivo\n");
+			}
+			time(&current_time);
+			info_time = localtime(&current_time);
+			fprintf(archivo, "%02d/%02d/%04d\n",
+				info_time->tm_mday,
+				info_time->tm_mon,
+				info_time->tm_year);
+			if(paddle_p1->score > paddle_p2->score)
+			{
+				printf("jugador 1 gano\n");
+				fprintf(archivo, "Ganador: Union Sovietica\n");
+			}
+			if(paddle_p2->score > paddle_p1->score)
+			{
+				printf("jugador 2 gano\n");
+				fprintf(archivo, "Ganador: Estados Unidos\n");
+			}
+			fprintf(archivo, "USA[%d] vs URS[%d]\n\n", paddle_p1->score, paddle_p2->score);
+			fclose(archivo);
+			printf("Datos guardados\n");
+			paddle_p1->score = 0;
+			paddle_p2->score = 0;
+
+		}
+
 		if (ball->x >= paddle_p2->x - ball->r && ball->x <= paddle_p2->x && ball->y + ball->r >= paddle_p2->y && ball->y <= paddle_p2->y + paddle_p2->height)
 		{
 			ball->hort_dir = -ball->hort_dir;
