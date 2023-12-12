@@ -91,40 +91,54 @@ int menu(void) {
     return op;
 }
 
+
+//Crea un registros con datos aleatorios
 void alumalea(int numcont) {
+    //SEXO
     numalum[numcont].sexo = rand() % 2; // 1 para hombre, 0 para mujer
     if (numalum[numcont].sexo == 1) {
+    //NOMBRE HOMBRE    
         strcpy(numalum[numcont].nombre, nombresH[rand() % 15]);
     } else {
+    //NOMRE MUJER
         strcpy(numalum[numcont].nombre, nombresM[rand() % 15]);
     }
+    //APELLIDOS
     strcpy(numalum[numcont].ape_pat, apellidos[rand() % 30]);
-    strcpy(numalum[numcont].ape_mat, apellidos[rand() % 30]); // comprobar que no se repitan
+    strcpy(numalum[numcont].ape_mat, apellidos[rand() % 30]); 
+    //MATRICULA
     numalum[numcont].matricula = (rand() % 99999) + 300000;
+    //EDAD
     numalum[numcont].edad = (rand() % 60) + 17;
+    //STATUS
     numalum[numcont].status = rand() % 2;
 }
 
+
+// Crea un registro con datos obtenidos manualmente
 void alummanual(int numcont) {
+    //STATUS
     numalum[numcont].status = 1;
     char temp[30];
     int tempn;
+    //MATRICULA
     printf("\nMatricula: ");
     scanf("%d", &tempn);
     getchar();
-    while (valimatricula(arreglomatriculas, numcont, tempn) != 1) {
+    while (valimatricula(arreglomatriculas, numcont, tempn) != 1)
+    {
         printf("\nMatricula no valida ingresa otra: ");
         scanf("%d", &tempn);
     }
     numalum[numcont].matricula = tempn;
-    //--------------------------------------------
+    //NOMBRE --------------------------------------------
     do {
         printf("Ingresa un nombre (MAYUSCULAS) ;  \n");
         fgets(temp, sizeof(temp), stdin);
     } while (valmayuscaracter(temp) == 0);
     temp[strcspn(temp, "\n")] = 0; // Eliminar el salto de línea al final
     strcpy(numalum[numcont].nombre, temp);
-    //--------------------------------------------
+    //APELLIDO PATERNO --------------------------------------------
     do {
         printf("Ingresa un Apellido paterno (MAYUSCULAS) ;  \n");
         fgets(temp, sizeof(temp), stdin);
@@ -132,7 +146,7 @@ void alummanual(int numcont) {
     } while (valmayuscaracter(temp) != 1);
     temp[strcspn(temp, "\n")] = 0; 
     strcpy(numalum[numcont].ape_pat, temp);
-    //--------------------------------------------------
+    //APELLIDO MATERNO--------------------------------------------------
     do {
         printf("Ingresa un Apellido materno (MAYUSCULAS) ;  \n");
         fgets(temp, sizeof(temp), stdin);
@@ -140,7 +154,7 @@ void alummanual(int numcont) {
     } while (valmayuscaracter(temp) != 1);
     temp[strcspn(temp, "\n")] = 0; 
     strcpy(numalum[numcont].ape_mat, temp);
-    //---------------------------------------------
+    //EDAD---------------------------------------------
     printf("\nEdad: ");
     scanf("%d", &tempn);
     getchar();
@@ -149,7 +163,7 @@ void alummanual(int numcont) {
         scanf("%d", &tempn);
     }
     numalum[numcont].edad = tempn;
-
+    //SEXO-------------------------------------------------------
     printf("\nSexo (1 para hombre, 0 para mujer): ");
     scanf("%d", &tempn);
     while (verificarango(0, 1, tempn) != 1) {
@@ -159,6 +173,7 @@ void alummanual(int numcont) {
     numalum[numcont].sexo = tempn;
 }
 
+//Se elimina el registro cambiando el campo de status a 0
 void eliminarregistro(int numcont, int matriculas[]) {
     int num;
     printf("Eliminar registro\n");
@@ -176,6 +191,8 @@ void eliminarregistro(int numcont, int matriculas[]) {
     numalum[busquedasecm(matriculas, numcont, num)].status = 0;
 }
 
+
+//Imprime todos los datos de la estructura
 void imprimirdatos(int numcont) {
     
         printf("NOMBRE\tAPEPAT\tAPEMAT\tMATRICULA\tEDAD\tSEXO\tSTATUS\n");
@@ -184,6 +201,7 @@ void imprimirdatos(int numcont) {
         }
 }
 
+//Ordena la estructura en orden ascendente usando el campo clave matricula con el metodo de la burbuja 
 void ordenar(int numcont) {
     int i, j;
     Talum temp;
@@ -198,6 +216,7 @@ void ordenar(int numcont) {
     }
 }
 
+//Busca e imprime el registro 
 void buscar(int numcont,int matriculas[]){
     int num;
     printf("Da la matricula que deseas buscar\n");

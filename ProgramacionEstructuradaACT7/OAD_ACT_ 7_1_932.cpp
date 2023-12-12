@@ -57,7 +57,6 @@ void menu()
         case 1:
             Salida1 (cadena);
             break;
-
         case 2:
             Salida2 (cadena);
             break;
@@ -87,10 +86,18 @@ void menu()
             break;
         default:
             break;
-            
         }
         printf("\n\n");
     } while (operacion != 0);
+}
+
+int largoCadena(char cadena[])
+{
+    int i;
+    for (i = 0; cadena[i] != '\0'; i++){ 
+    }
+    i=i-1;
+    return i;
 }
 
 void mayusculas(char cadena[])
@@ -106,14 +113,6 @@ void mayusculas(char cadena[])
     }
 }
 
-int largoCadena(char cadena[])
-{
-    int i;
-    for (i = 0; cadena[i] != '\0'; i++){ 
-    }
-    i-=1;
-    return i;
-}
 
 void Salida1 (char cadena[])
 {
@@ -123,6 +122,8 @@ void Salida1 (char cadena[])
         printf("%c", cadena[i]);
     }
 }
+//ENSENADA
+
 void Salida2 (char cadena[])
 {
     int  lar;
@@ -133,6 +134,7 @@ void Salida2 (char cadena[])
         printf("%c", cadena[i]);
     }
 }
+//ADANESNE
 
 void Salida3 (char cadena[])
 {
@@ -142,6 +144,14 @@ void Salida3 (char cadena[])
         printf("%c\n", cadena[i]);
     }
 }
+//E
+//N
+//S
+//E
+//N
+//A
+//D
+//A
 
 void Salida4 (char cadena[])
 {
@@ -153,6 +163,14 @@ void Salida4 (char cadena[])
         printf("%c\n", cadena[i]);
     }
 }
+//A
+//D
+//A
+//N
+//E
+//S
+//N
+//E
 
 void Salida5 (char cadena[])
 {
@@ -168,6 +186,14 @@ void Salida5 (char cadena[])
         printf("\n");
     }
 }
+//ENSENADA
+//ENSENAD
+//ENSENA
+//ENSEN
+//ENSE
+//ENS
+//EN
+//E
 
 void Salida6 (char cadena[])
 {
@@ -183,6 +209,14 @@ void Salida6 (char cadena[])
         printf("\n");
     }
 }
+//ADANESNE
+//ADANESN
+//ADANES
+//ADANE
+//ADAN
+//ADA
+//AD
+//A
 
 void Salida7 (char cadena[])
 {
@@ -200,6 +234,14 @@ void Salida7 (char cadena[])
         printf("\n");
     }
 }
+//ENSENADA
+//NSENADA
+//SENADA
+//ENADA
+//NADA
+//ADA
+//DA
+//A
 
 void Salida8 (char cadena[])
 {
@@ -217,6 +259,14 @@ void Salida8 (char cadena[])
         printf("\n");
     }
 }
+//ADANESNE
+//DANESNE
+//ANESNE
+//NESNE
+//ESNE
+//SNE
+//NE
+//E
 
 void Salida9 (char cadena[])
 {
@@ -228,6 +278,7 @@ void Salida9 (char cadena[])
         }
     }
 }
+//NSND
 
 void Salida10(char cadena[])
 {
@@ -239,3 +290,4 @@ void Salida10(char cadena[])
             }
         }
 }
+//EEAA

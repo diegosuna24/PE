@@ -11,6 +11,8 @@
 #include <string.h>
 
 
+int const max = 150;
+
 typedef struct _alum {
     int status;
     int matricula;
@@ -20,7 +22,7 @@ typedef struct _alum {
     int edad;
     char sexo;
 } Talum;
-Talum numalum[1500];
+Talum numalum[max];
 
 int menu();
 void eleccion(int op);
@@ -102,7 +104,7 @@ void eleccion(int op){
         char nombre[50];
             printf("Ingrese el nombre del archivo: ");
             scanf("%s", nombre);
-            printf("Hay %d líneas en el archivo.\n", cantidad(nombre));
+            printf("Hay %d lineas en el archivo.\n", cantidad(nombre));
         break;
         case 9 :
             borados();
@@ -115,6 +117,7 @@ void agregar(){
     char nombresM[15][30] = {"MARIA", "ANA", "LUISA", "ISABEL", "SOFIA", "ELENA", "VALENTINA", "CLAUDIA", "CAMILA", "LAURA", "MARTA", "PATRICIA", "ROSA", "LUCIA", "CARMEN"};
     char apellidos[30][30] = {"OSUNA", "ACEVEDO", "RODRIGUEZ", "LOPEZ", "PEREZ", "FERNANDEZ", "GARCIA", "SANCHEZ", "RAMIREZ", "TORRES", "DIAZ", "HERNANDEZ", "VARGAS", "ROMERO", "ALVAREZ", "MORENO", "ROJAS", "MORALES", "ORTEGA", "CASTRO", "RUIZ", "DELGADO", "SILVA", "NAVARRO", "MENDOZA", "GUERRERO", "VEGA", "JIMENEZ", "FLORES"};
 
+    if(n+10<=max){
      for(int i=0;i<10;i++){
         //status
         numalum[n].status = 1;
@@ -139,29 +142,44 @@ void agregar(){
         n++;
     }
     ban=0;
+    }
+    else
+    {
+        printf("Se alcanzo el maximo");
+    }
 }
 
 void cargar(){
     FILE *lectura;
+    char nombre[50];
 
-    lectura = fopen("C://Users//osuna//Desktop//PE//PEA12//lectura.txt","r");
+
+    printf("nombre del archivo a cargar\n");
+    scanf("%s",nombre);
+    strcat(nombre,".txt");
+
+    lectura = fopen(nombre,"r");
     if(lectura==NULL){
         printf("Error");
+        return;
     }
     else
     {
-         do{
-            fscanf(lectura, "%d %d %s %s %s %d %s\n", 
-            & numalum[n].status,
-            & numalum[n].matricula,
-            numalum[n].nombre,
-            numalum[n].ape_pat,
-            numalum[n].ape_mat,
-            & numalum[n].edad,
-            & numalum[n].sexo);
-            n=n+1;
-            }while( n<1500 && feof(lectura)==0);
-        fclose(lectura);
+        while (fscanf(lectura, "%d %d %s %s %s %d %c",
+                  &numalum[n].status,
+                  &numalum[n].matricula,
+                  numalum[n].nombre,
+                  numalum[n].ape_pat,
+                  numalum[n].ape_mat,
+                  &numalum[n].edad,
+                  &numalum[n].sexo) == 7) {
+        n++;
+        if (n >= max) {
+            printf("Se ha alcanzado el límite máximo de alumnos.\n");
+            break;
+        }
+    }
+fclose(lectura);
     }
     ban=0;
 }
@@ -194,6 +212,15 @@ int buscar(int matri){
         pos=busquedasec(matricula,matri,n);
         if(pos>=0){
         printf("Encontrado en la pocicion %d\n",pos);
+        printf("%-4s %-10s %-15s %-15s %-15s %-6s %-4s \n", "EST","MATRICULA","NOMBRE","APP","APM","EDAD","SEXO");
+        printf("%-4d %-10d %-15s %-15s %-15s %-6d %-4c\n", 
+            numalum[pos].status,
+            numalum[pos].matricula,
+            numalum[pos].nombre,
+            numalum[pos].ape_pat,
+            numalum[pos].ape_mat,
+            numalum[pos].edad,
+            numalum[pos].sexo);
         }
         else
         {
@@ -205,6 +232,14 @@ int buscar(int matri){
         pos=busquedasecmejorada(matricula,matri,n);
         if(pos>=0){
         printf("Encontrado en la pocicion %d\n",pos);
+        printf("%-4d %-10d %-15s %-15s %-15s %-6d %-4c\n", 
+            numalum[pos].status,
+            numalum[pos].matricula,
+            numalum[pos].nombre,
+            numalum[pos].ape_pat,
+            numalum[pos].ape_mat,
+            numalum[pos].edad,
+            numalum[pos].sexo);
         }
         else
         {
@@ -242,17 +277,14 @@ void  ordenar() {
             }
         }
     }
-
     }
     ban=1;
-    
 }
 
 void mostrar(){
     printf("%-4s %-10s %-15s %-15s %-15s %-6s %-4s \n", "EST","MATRICULA","NOMBRE","APP","APM","EDAD","SEXO");
-    int x=40;
     int i=0;
-        for(i=0;i<=x;i++){
+        for(i=0;i<n;i++){
         printf("%-4d %-10d %-15s %-15s %-15s %-6d %-4c\n", 
             numalum[i].status,
             numalum[i].matricula,
@@ -261,13 +293,7 @@ void mostrar(){
             numalum[i].ape_mat,
             numalum[i].edad,
             numalum[i].sexo);
-            if(i==n){
-                return;
-
-            }
         }
-        x=x+40;
-        getchar();
 }
 
 void generar(){
@@ -321,13 +347,9 @@ int cantidad(char nombre[50]) {
     return cont;
 }
 
-void eliminados(){
-
-}
-
 void borados(){
         FILE *borrados;
-        borrados=fopen("C://Users//osuna//Desktop//PE//PEA12//borrados.txt","w");
+        borrados=fopen("borrados.txt","w");
         if(borrados==NULL)
         {
             printf("Error");

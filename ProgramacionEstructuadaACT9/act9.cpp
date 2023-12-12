@@ -79,6 +79,8 @@ int menu(){
     return op;
 }
 
+//Llenar vector con numero aleatorios entre 100 y 200 con 
+//numeros enteros positivos y sin repeticion
 void llenarvector(){
     for(int i=0;i<=14;i++){
         int num;
@@ -91,6 +93,8 @@ void llenarvector(){
     printf("Arreglo creado\n");
 }
 
+//Llenar matriz con numero aleatorios entre 100 y 200 con 
+//numeros enteros positivos y sin repeticion
 void llenarmatriz(){
     int cont=0;
     for(int i=0;i<=15;i++)
@@ -113,12 +117,14 @@ void llenarmatriz(){
     printf("Matriz creada\n");
 }
 
+// Imprime los valores del vector
 void imprimirvector(int vector[]){
     for(int i=0;i<15;i++){
         printf("El numero de la pocicion %d es %d\n",i+1,vector[i]);
     }
 }
 
+// Imprime los valores de la matriz
 void imprimirmatriz(){
     for(int i=0;i<=3;i++)
     {
@@ -129,6 +135,7 @@ void imprimirmatriz(){
     }
 }
 
+//Ordena el vector por el metodo de la burbuja
 void ordenarvector(int vector[]){
     int aux;
     for(int i=0;i<14;i++){
@@ -143,6 +150,7 @@ void ordenarvector(int vector[]){
     printf ("Arreglo ordenado\n");
 }
 
+//Busca el valor elegido en el vector con el metodo de busqueda ecuencial
 void buscarvalor (int vector[]){
     int num;
     printf("Elige un numero para buscra en el erreglo\n");

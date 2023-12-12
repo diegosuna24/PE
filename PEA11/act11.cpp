@@ -15,6 +15,7 @@
     char anio[5];
     };
 
+//Struct anidado
     struct datos {
         int status;
         int matricula;
@@ -93,6 +94,7 @@ void ejercicio(int ne){
     }
 }
 
+// Aqui se decide si se quiere agragar automatico o manual  un registro a la estructura
 void agregar(){
     int num=0;
 
@@ -117,9 +119,9 @@ void agregar(){
         printf("regrear");
             break;
     }
-
 }
 
+// Se agraga manualmente un registro con los tados del estudiante a la estructura
 void manual(){
     //status
     vect[n].status=1;
@@ -286,6 +288,7 @@ void preguntarcadena(int num){
     }
 }
 
+//genera automaticamente 100 registros con dados aleatorios a la estructura
 void genauto(){
     for(int i=0; i<100; i++){
 
@@ -345,6 +348,7 @@ n++;
 }
 }
 
+//imprime todos los datos de la estructura
 void imprimir(int num){
     printf("%-4s %-10s %-15s %-15s %-15s %-10s %-4s %-3s %-4s %-18c\n","EST","MATRICULA","NOMBRE","APP","APM","FECHA","SEXO","LUGAR","CURP");
         for(int i=0; i<num; i++){
@@ -353,6 +357,7 @@ void imprimir(int num){
      }
 }
 
+// Se busca la matricula que se ingresa y se elimina cambaindo el status a 0
 void eliminar(){
     if(n>0){
     int matri;
@@ -374,6 +379,7 @@ void eliminar(){
     }
 }
 
+// Se busca la matricula ingresada y muestra los datos
 void buscar(){
     int matri;
     int pos;
@@ -396,6 +402,7 @@ void buscar(){
     printf("%s\n",vect[pos].sexo);
 }
  
+ // Se habre un archivo de texto en modo escritura para guardar los datos de la estructura
 void txt() {
     FILE *texto = fopen("C:\\Users\\osuna\\Desktop\\PE\\PEA11\\texto.txt", "w");
 
@@ -411,6 +418,7 @@ void txt() {
     }
     fclose(texto);
 }
+
 
 void ordenar(int numcont) {
     int i, j;

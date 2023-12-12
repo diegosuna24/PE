@@ -29,8 +29,8 @@ int msges()
     printf("3 == CAPITAL \n");
     printf("4 == CANTIDAD CARACTERES \n");
     printf("5 == REVERSA \n");
-    printf("6 == NO ESPACIOS \n");
-    printf("7 == CARACTERES ALFABETICOS \n");
+    printf("6 == NO ESPACIOS xx \n");
+    printf("7 == CARACTERES ALFABETICOS xx \n");
     printf("8 == IMPRIMIR \n");
     scanf("%d", &op);
     return op;

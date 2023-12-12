@@ -1,0 +1,11 @@
+EST  MATRICULA  NOMBRE          APP             APM             EDAD   SEXO 
+1    329915     FERNANDO        PEREZ           RAMIREZ         35     M   
+1    310810     CARLOS          NAVARRO         TORRES          47     M   
+1    312578     ANA             VEGA            FERNANDEZ       63     F   
+1    318860     MARTA           RUIZ            ROMERO          40     F   
+1    301087     LUIS            RODRIGUEZ       DELGADO         59     M   
+1    320267     JUAN            ROMERO          MORENO          25     M   
+1    308048     MIGUEL          RODRIGUEZ       HERNANDEZ       56     M   
+1    311128     CARMEN          RUIZ            VEGA            28     F   
+1    302484     ROSA            GARCIA          ACEVEDO         49     F   
+1    324149     SERGIO          GARCIA          PEREZ           66     M   

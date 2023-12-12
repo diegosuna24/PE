@@ -1,2 +1,2 @@
 EST  MATRICULA  NOMBRE          APP             APM             EDAD   SEXO 
-7
+0    324149     SERGIO          GARCIA          PEREZ           66     M   
